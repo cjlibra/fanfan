@@ -10,8 +10,8 @@ import (
 	
 )
 const (
-   //url = "192.168.1.8:1200"
-   url = "127.0.0.1:1200"
+   url = "192.168.1.8:1200"
+  // url = "127.0.0.1:1200"
    manhandle = "aaeecc07010b010000000014"
    autohandle = "aaeecc07010b020000000015"
  //  lasting  = time.Second*60
@@ -32,6 +32,7 @@ func main(){
     }
     debugLog := log.New(logFile,"[Info]",log.Llongfile | log.LstdFlags)
     debugLog.Println("Start to be Running")
+	
 	autohandle_bin,err := hex.DecodeString(autohandle)
 	if err != nil {
 	    debugLog.Println("error autohandle_bin")
@@ -168,6 +169,7 @@ func main(){
 	}
 	b := make(chan int)
 	fmt.Println("start running")
+	fmt.Println("此软件界面不要关闭，否则食堂消费机不会自动设置模式")
 	<-b
 	
 }
