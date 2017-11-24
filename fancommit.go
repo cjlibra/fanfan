@@ -10,8 +10,8 @@ import (
 	
 )
 const (
-   url = "192.168.1.8:1200"
-  // url = "127.0.0.1:1200"
+   //url = "192.168.1.8:1200"
+   url = "127.0.0.1:1200"
    manhandle = "aaeecc07010b010000000014"
    autohandle = "aaeecc07010b020000000015"
  //  lasting  = time.Second*60
